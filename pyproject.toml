@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf-cv-ds"
+version = "0.1.0"
+description = "Distributional Stability Keyword Extraction (TF-CV-DS): a potentially novel intra-document term representation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
+authors = [{name = "Research Prototype"}]
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+nltk-pos = ["nltk>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
