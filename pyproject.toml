@@ -9,7 +9,7 @@ description = "Distributional Stability Keyword Extraction (TF-CV-DS): a potenti
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
-authors = [{name = "Research Prototype"}]
+authors = [{name = "Aditya Pandey"}]
 license = {text = "MIT"}
 
 [project.optional-dependencies]
